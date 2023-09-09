@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="style.css">
+    <title>Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="./images/logo.png"></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li style="-webkit-text-fill-color: lightgrey; cursor: pointer;"><a>Home</a></li>
+                <li><a href="races.html">Races</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="background"></main>
+    <main>
+        <div class="row-outer">
+            <div class="container">
+                <div class="animated-heading">
+                    <h1 id="speed"><span id="words">speed</span></h1>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="mobile-navbar.js"></script>
+    <script type="text/javascript">
+        (function() {
+            var words = [
+                "speed",
+                "geschwindigkeit",
+                "snelheid",
+                "vitesse",
+                "velocit&agrave;",
+                "velocidade",
+                "سرعة",
+                "スピード"
+            ],
+            i = 0;
+            setInterval(function(){
+                $('#words').fadeOut(function(){
+                    $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+                });
+            }, 5000)
+        })();
+    </script>
+</body>
+</html>

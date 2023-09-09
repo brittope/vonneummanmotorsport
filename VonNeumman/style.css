@@ -1,0 +1,195 @@
+* {
+    margin:0px;
+    padding:0px
+}
+
+a {
+    color:black;
+    text-decoration:none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity:0.7;
+}
+
+.logo {
+    height: 45px;
+}
+
+nav {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #fff;
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    width: 30vw;
+    height: 92vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    z-index: 10;
+}
+
+.nav-list li {
+    margin-left: 0px;
+
+}
+
+.mobile-menu {
+    margin-left: 39vw;
+    display: block;
+    cursor: pointer; 
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: black;
+    margin: 8px;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+    background: url(./images/background-Nürburgring.webp) center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height:92vh;
+}
+
+body#aboutus {
+    overflow-x: hidden;
+    position: relative;
+    background: url(./images/background-Nürburgring.webp) center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height:92vh;
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+ 
+.aboutus {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    opacity: 60%;
+    position:fixed;
+    z-index: -1;
+}
+.heading-abouts {
+    display: flex;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    margin-top: 00vh;
+    z-index: 1;
+}
+.text-aboutus {
+    text-align: center  ;
+    justify-content: center;
+    display: flex;
+    margin-top: 15vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+}   
+
+.container {
+    width: 95%;
+    max-width: 1160px;
+    margin: auto;
+}
+.animated-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+h1#speed{
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    opacity: 85%;
+}
+span#words {
+    font-weight: 750;
+    font-stretch:extra-expanded;
+}
+
+.products {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    padding: 20px;
+}
+
+.product {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.product img {
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.product p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.product .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.product button {
+    background-color: black;
+    border-radius: 12px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: lightgrey;
+}
